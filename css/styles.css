@@ -1,25 +1,39 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url("https://media.licdn.com/dms/image/C4E16AQH6D3Vl1NoxJw/profile-displaybackgroundimage-shrink_350_1400/0?e=1558569600&v=beta&t=hRlqZUyGnQQESbmiPO2PwSFLg-lgkj-psBxxvbjGQyY");
+
+}
 img {
     height: 200px;
     width: 250px;
 }
 .wrapper {
-    margin: 2%;
+    margin: 0%;
+    align-content: center;
+    text-align: center;
+    color: #4aaaa5;
+    
 }
 .aboutMe {
     width: 40%;
     line-height: 1.5;
     float: left;
-    background-color: brown;
-    margin-bottom: 1%;
+    background-color: green;
+    margin: 1% auto;
+    margin-left: 1%;
     padding: 1%;
+    border: black 5px solid;
 }
 .contactInfo {
     width: 40%;
     line-height: 1.5;
-    float: right;
-    background-color: brown;
-    margin-bottom: 1%;
+    display: inline-block;
+    background-color: green;
+    margin: 1% auto;
     padding: 1%;
+    border: black 5px solid;
+
 }
 .aboutMe img {
     float: left;
@@ -28,9 +42,20 @@ img {
 .portfolio {
     margin-top: 1%;
     clear: both;
-    background-color: brown;
+    background-color: green;
+    padding: 1%;
+    border: black 5px solid;
+
 
 }
 .portfolio div {
     display: inline-block;
+    margin: 1%;
+}
+.header {
+    background-color: green;
+    padding: 1%;
+}
+.divTitle {
+    border-bottom: black 2px solid;
 }
