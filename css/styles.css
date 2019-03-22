@@ -1,0 +1,36 @@
+img {
+    height: 200px;
+    width: 250px;
+}
+.wrapper {
+    margin: 2%;
+}
+.aboutMe {
+    width: 40%;
+    line-height: 1.5;
+    float: left;
+    background-color: brown;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+.contactInfo {
+    width: 40%;
+    line-height: 1.5;
+    float: right;
+    background-color: brown;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+.aboutMe img {
+    float: left;
+    margin-right: 2%;
+}
+.portfolio {
+    margin-top: 1%;
+    clear: both;
+    background-color: brown;
+
+}
+.portfolio div {
+    display: inline-block;
+}
