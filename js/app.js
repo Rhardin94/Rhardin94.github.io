@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    $(".GifTastic").hide();
+    $(".Office-Trivia").hide();
     const aboutMe = $(".aboutMe");
     aboutMe.hide();
     const contactInfo = $(".contactInfo");
@@ -16,8 +18,24 @@ $(document).ready(function() {
         contactInfo.addClass("animated fadeInRight");
         contactInfo.show()
     }
+    setTimeout(projectSwap, 6000);  
     function portfolioDiv() {
         portfolio.addClass("animated fadeInUp");
         portfolio.show();
+    }
+    function projectSwap() {
+        setTimeout(function() {
+            $(".Nerd-Lator").hide();
+            $(".GifTastic").show();
+        }, 4000);
+        setTimeout(function() {
+            $(".GifTastic").hide();
+            $(".Office-Trivia").show();
+        }, 8000);
+        setTimeout(function() {
+            $(".Office-Trivia").hide();
+            $(".Nerd-Lator").show();
+        }, 12000);
+        setTimeout(projectSwap, 16000);
     }
 });
