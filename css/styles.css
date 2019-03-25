@@ -2,18 +2,28 @@ body {
     height: 100%;
     width: 100%;
     background-image: url("https://media.licdn.com/dms/image/C4E16AQH6D3Vl1NoxJw/profile-displaybackgroundimage-shrink_350_1400/0?e=1558569600&v=beta&t=hRlqZUyGnQQESbmiPO2PwSFLg-lgkj-psBxxvbjGQyY");
-
 }
 /*Fonts*/
 h1, h2, h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 auto 1%;
 }
+/*Bio*/
 p {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
 }
+.divTitle {
+    margin: 1%;
+}
+/*Manageable image sizes*/
 img {
+    margin-top: 5px;
     height: 200px;
     width: 250px;
+}
+header {
+    border-bottom: black 5px solid;
 }
 .wrapper {
     margin: 0%;
