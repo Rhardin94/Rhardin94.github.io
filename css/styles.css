@@ -29,8 +29,9 @@ body {
 }
 /*Hover effect for button added due to default border and background being removed*/
 .aboutBtn:hover {
-    transition: color 0.5s;
+    transition: color, font-size 0.5s;
     color: #4aaaa5;
+    font-size: large;
 }
 /*Fonts*/
 h1, h2, h3 {
@@ -119,8 +120,9 @@ img {
 }
 /*Added hover to compensate default appearance change*/
 .contactBtn:hover {
-    transition: color 0.5s;
+    transition: color, font-size 0.5s;
     color: white;
+    font-size: large;
 }
 /*Div that contains contact form*/
 .contactForm {
@@ -156,9 +158,11 @@ label {
     background: none;
     border: none;
 }
+/*Hover effects for submit button*/
 .submitBtn:hover {
-    transition: color 0.5s;
+    transition: color, font-size 0.5s;
     color: white;
+    font-size: large;
 }
 /*Home btn to return from contact page*/
 .homeBtn {
@@ -167,9 +171,17 @@ label {
     border: none;
     text-align: center;
 }
+/*Hover effects for home button*/
 .homeBtn:hover {
-    transition: color 0.5s;
+    transition: color, font-size 0.5s;
     color: darkred;
+    font-size: large;
+}
+/*Hover effects for links*/
+a:hover {
+    transition: color, font-size 0.8s;
+    color: darkorchid;
+    font-size: x-large;
 }
 @media screen and (max-width: 980px) {
     .introDiv {
