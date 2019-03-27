@@ -59,6 +59,10 @@ img {
     background-color: black;
     padding: 1%;
 }
+.name {
+    color: #4aaaa5;
+    text-align: center;
+}
 /*Container for about page content*/
 .wrapper {
     margin: 0%;
@@ -128,6 +132,10 @@ img {
     border: darkolivegreen 5px solid;
     width: 60%;
     line-height: 1.5;
+    text-align: center;
+}
+form {
+    text-align: left;
 }
 /*Input fields inside form*/
 input, textarea {
@@ -142,10 +150,26 @@ input, textarea {
 label {
     color: #4aaaa5;
 }
+/*Submit button for sending form info*/
 .submitBtn {
     color: #4aaaa5;
     background: none;
-    border: darkolivegreen 3px solid;
+    border: none;
+}
+.submitBtn:hover {
+    transition: color 0.5s;
+    color: white;
+}
+/*Home btn to return from contact page*/
+.homeBtn {
+    color: #4aaaa5;
+    background: none;
+    border: none;
+    text-align: center;
+}
+.homeBtn:hover {
+    transition: color 0.5s;
+    color: darkred;
 }
 @media screen and (max-width: 980px) {
     .introDiv {
@@ -162,10 +186,13 @@ label {
         float: none;
         margin: 1% auto;
     }
-    .contactInfo {
+    .onlineInfo {
         width: 80%;
         float: none;
         margin: 1% auto;
+    }
+    .contactForm {
+        width: 80%;
     }
 }
 @media screen and (max-width: 640px) {
@@ -183,9 +210,12 @@ label {
         float: none;
         margin: 1% auto;
     }
-    .contactInfo {
+    .onlineInfo {
         width: 90%;
         float: none;
         margin: 1% auto;
+    }
+    .contactForm {
+        width: 90%;
     }
 }

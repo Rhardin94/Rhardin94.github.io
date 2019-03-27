@@ -70,4 +70,15 @@ $(document).ready(function() {
         $(".messageInput").val("");
         $(".wrapper").show();
     })
+    //On-Click to navigate away from contact page
+    $(".homeBtn").on("click", function(event) {
+        //Preventing button from refreshing page in-case it tries to.
+        event.preventDefault();
+        //Clears the input fields and returns user to about page
+        $(".contactDiv").hide();
+        $(".nameInput").val("");
+        $(".emailInput").val("");
+        $(".messageInput").val("");
+        $(".wrapper").show();
+    });
 });
