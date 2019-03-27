@@ -177,6 +177,10 @@ label {
     color: darkred;
     font-size: large;
 }
+a {
+    text-decoration: none;
+    color: grey;
+}
 /*Hover effects for links*/
 a:hover {
     transition: color, font-size 0.8s;
