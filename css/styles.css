@@ -1,3 +1,4 @@
+/*Base-line styling, like background image, etc.*/
 body {
     height: auto;
     width: 100%;
@@ -6,10 +7,12 @@ body {
     overflow: auto;
     overflow-x: hidden;
 }
+/*Text inside introDiv styling*/
 .myName, .mySkill {
     margin: auto;
     color: white;
 }
+/*Div that appears on page load, contains buttons to migrate to about me page*/
 .introDiv {
     position: relative;
     top: 300px;
@@ -18,11 +21,13 @@ body {
     width: 980px;
     text-align: center;
 }
+/*Removing default button appearance*/
 .aboutBtn {
     color: white;
     background: none;
     border: none;
 }
+/*Hover effect for button added due to default border and background being removed*/
 .aboutBtn:hover {
     transition: color 0.5s;
     color: #4aaaa5;
@@ -37,8 +42,10 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
 }
+/*Title of each div, adding margin to adjust position and border to separate title from content*/
 .divTitle {
     margin: 1%;
+    border-bottom: darkolivegreen 2px solid;
 }
 /*Manageable image sizes*/
 img {
@@ -46,9 +53,13 @@ img {
     height: 200px;
     width: 250px;
 }
-header {
+/*Adding border to header at top of page to match other divs*/
+.header {
     border-bottom: darkolivegreen 5px solid;
+    background-color: black;
+    padding: 1%;
 }
+/*Container for about page content*/
 .wrapper {
     margin: 0%;
     align-content: center;
@@ -56,6 +67,7 @@ header {
     color: #4aaaa5;
     
 }
+/*Bio div*/
 .aboutMe {
     width: 40%;
     line-height: 1.5;
@@ -66,6 +78,12 @@ header {
     padding: 1%;
     border: darkolivegreen 5px solid;
 }
+/*Profile img, floated to compensate text*/
+.aboutMe img {
+    float: left;
+    margin-right: 2%;
+}
+/*Portfolio div with cycling projects*/
 .portfolio {
     margin: 1% auto;
     display: inline-block;
@@ -74,11 +92,13 @@ header {
     border: darkolivegreen 5px solid;
     width: 40%;
 }
+/*Targetting child div inside portfolio for positioning*/
 .portfolio div {
     display: inline-block;
     margin: 1%;
 }
-.contactInfo {
+/*Online profiles div, contains button to migrate to contact page*/
+.onlineInfo {
     width: 40%;
     line-height: 1.5;
     display: inline-block;
@@ -86,20 +106,52 @@ header {
     margin: 1% auto;
     padding: 1%;
     border: darkolivegreen 5px solid;
-
 }
-.aboutMe img {
-    float: left;
-    margin-right: 2%;
+/*Button that migrates to contact page, removed default background and border*/
+.contactBtn {
+    color: #4aaaa5;
+    background: none;
+    border: none;
 }
-.header {
+/*Added hover to compensate default appearance change*/
+.contactBtn:hover {
+    transition: color 0.5s;
+    color: white;
+}
+/*Div that contains contact form*/
+.contactForm {
+    position: relative;
+    top: 100px;
+    margin: 1% auto;
     background-color: black;
     padding: 1%;
+    border: darkolivegreen 5px solid;
+    width: 60%;
+    line-height: 1.5;
 }
-.divTitle {
-    border-bottom: darkolivegreen 2px solid;
+/*Input fields inside form*/
+input, textarea {
+    margin: 1% auto;
+    background-color: darkolivegreen;
+    color: #4aaaa5;
+    border: #444444 3px solid;
+    width: 95%;
+    resize: none;
+}
+/*Labels for input boxes*/
+label {
+    color: #4aaaa5;
+}
+.submitBtn {
+    color: #4aaaa5;
+    background: none;
+    border: darkolivegreen 3px solid;
 }
 @media screen and (max-width: 980px) {
+    .introDiv {
+        width: 80%;
+        margin: auto;
+    }
     .aboutMe {
         width: 80%;
         float: none;
@@ -117,6 +169,10 @@ header {
     }
 }
 @media screen and (max-width: 640px) {
+    .introDiv {
+        width: 90%;
+        margin: auto;
+    }
     .aboutMe {
         width: 90%;
         float: none;
