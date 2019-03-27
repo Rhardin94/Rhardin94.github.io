@@ -1,7 +1,31 @@
 body {
-    height: 100%;
+    height: auto;
     width: 100%;
-    background-image: url("https://media.licdn.com/dms/image/C4E16AQH6D3Vl1NoxJw/profile-displaybackgroundimage-shrink_350_1400/0?e=1558569600&v=beta&t=hRlqZUyGnQQESbmiPO2PwSFLg-lgkj-psBxxvbjGQyY");
+    background-position: center;
+    background-image: url("https://i.gifer.com/2RNf.gif");
+    overflow: auto;
+    overflow-x: hidden;
+}
+.myName, .mySkill {
+    margin: auto;
+    color: white;
+}
+.introDiv {
+    position: relative;
+    top: 300px;
+    margin: 0 auto;
+    opacity: 0.5;
+    width: 980px;
+    text-align: center;
+}
+.aboutBtn {
+    color: white;
+    background: none;
+    border: none;
+}
+.aboutBtn:hover {
+    transition: color 0.5s;
+    color: #4aaaa5;
 }
 /*Fonts*/
 h1, h2, h3 {
@@ -23,7 +47,7 @@ img {
     width: 250px;
 }
 header {
-    border-bottom: black 5px solid;
+    border-bottom: darkolivegreen 5px solid;
 }
 .wrapper {
     margin: 0%;
@@ -36,48 +60,52 @@ header {
     width: 40%;
     line-height: 1.5;
     float: left;
-    background-color: green;
+    background-color: black;
     margin: 1% auto;
-    margin-left: 1%;
+    margin-left: 2%;
     padding: 1%;
-    border: black 5px solid;
+    border: darkolivegreen 5px solid;
+}
+.portfolio {
+    margin: 1% auto;
+    display: inline-block;
+    background-color: black;
+    padding: 1%;
+    border: darkolivegreen 5px solid;
+    width: 40%;
+}
+.portfolio div {
+    display: inline-block;
+    margin: 1%;
 }
 .contactInfo {
     width: 40%;
     line-height: 1.5;
     display: inline-block;
-    background-color: green;
+    background-color: black;
     margin: 1% auto;
     padding: 1%;
-    border: black 5px solid;
+    border: darkolivegreen 5px solid;
 
 }
 .aboutMe img {
     float: left;
     margin-right: 2%;
 }
-.portfolio {
-    margin-top: 1%;
-    margin: auto;
-    clear: both;
-    background-color: green;
-    padding: 5px;
-    border: black 5px solid;
-    width: 95%;
-}
-.portfolio div {
-    display: inline-block;
-    margin: 1%;
-}
 .header {
-    background-color: green;
+    background-color: black;
     padding: 1%;
 }
 .divTitle {
-    border-bottom: black 2px solid;
+    border-bottom: darkolivegreen 2px solid;
 }
 @media screen and (max-width: 980px) {
     .aboutMe {
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+    .portfolio {
         width: 80%;
         float: none;
         margin: 1% auto;
@@ -90,6 +118,11 @@ header {
 }
 @media screen and (max-width: 640px) {
     .aboutMe {
+        width: 90%;
+        float: none;
+        margin: 1% auto;
+    }
+    .portfolio {
         width: 90%;
         float: none;
         margin: 1% auto;
