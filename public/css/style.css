@@ -1,3 +1,4 @@
+/*Background image*/
 body {
   background-image: url("../assets/images/background.jpg");
 }
@@ -16,7 +17,19 @@ img {
   height: 200px;
   width: 250px;
 }
+/*Links*/
 a {
   text-decoration: none;
   color: whitesmoke;
+}
+/*Project Divs*/
+.project {
+  background-color: darkolivegreen;
+}
+/*All containers on the page*/
+.aboutMe, .skills, .portfolio, .jumbotron, .footer, .modal-header, .modal-body, .modal-footer, .contactBtn {
+  background-color: darkolivegreen;
+}
+.contactBtn {
+  border: none;
 }
