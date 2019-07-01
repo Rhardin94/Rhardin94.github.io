@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <!--Bootstrap-->
+    <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Font Awesome Local-->
     <script src="https://kit.fontawesome.com/eee7af1ea0.js"></script>
@@ -20,7 +20,7 @@
   </head>
   <body>
     <!--Header-->
-    <div class="jumbotron bg-dark text-white text-center p-3 border border-warning">
+    <div class="jumbotron text-white text-center p-3 border border-warning">
       <!--My Name and Online Links-->
       <div class="onlineInfo">
         <h1 class="name display-4">Robert Hardin</h1>
@@ -35,13 +35,13 @@
         <h3 class="d-inline"><a class="fa fa-print animated pulse infinite" href="public/assets/images/RH Developer Resume - Google Docs.pdf"
             target="_blank"></a></h3>
             &#124;          
-        <button class="d-inline btn btn-dark contactBtn animated pulse infinite" data-toggle="modal" data-target="contactModal"><h3 class="far fa-envelope"></h3></button>
+        <button class="d-inline btn btn-warning text-white contactBtn animated pulse infinite" data-toggle="modal" data-target="contactModal"><h3 class="far fa-envelope"></h3></button>
       </div>
     </div>
     <!--Main Content-->
     <div class="container">
       <div class="row m-2">
-        <div class="col-lg-12 bg-dark p-3 aboutMe text-white border border-warning">
+        <div class="col-lg-12  p-3 aboutMe text-white border border-warning">
             <h1 class="divTitle text-center">About Me</h1>
             <hr>
             <img class="m-2 float-left border border-warning" src="public/assets/images/Headshot_online.jpg" alt="caucasian developer, blue/green eyes, brown hair">
@@ -62,7 +62,7 @@
       </div>
       <!--Skills Div-->
       <div class="row m-2">
-        <div class="col-lg-12 p-3 bg-dark text-white text-center border border-warning skills">
+        <div class="col-lg-12 p-3  text-white text-center border border-warning skills">
           <h1>Skills</h1>
           <h3 class="d-inline m-1 fab fa-html5"></h3>
           <h3 class="d-inline m-1 fab fa-css3-alt"></h3>
@@ -74,54 +74,50 @@
       </div>
       <!--Projects-->
       <div class="row m-2">
-        <div class="col-lg-12 p-3 portfolio bg-dark text-white text-center border border-warning">
+        <div class="col-lg-12 p-3 portfolio  text-white text-center border border-warning">
           <h1>Portfolio</h1>
           <hr>
           <div class="currentProject"></div>
         </div>
+      </div>
     </div>
     <!--Contact Modal-->
     <div class="contactModal modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header bg-dark text-white">
-              <h4 class="modal-title">Contact Me</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header  text-white">
+            <h4 class="modal-title">Contact Me</h4>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+          <div class="modal-body  text-white">
+            <form method="POST" action="https://afternoon-inlet-46699.herokuapp.com/contact">
+              <p class="d-block">Phone: (901)-326-6124</p>
+              <p class="d-block">Email: rob.j.hardin@gmail.com</p>
+              <h6 class="d-block">Or use the contact form below to stay on the page!</h6>
+              <hr>
+              <div class="form-group">
+                <label id="email" for="emailInput">Email</label>
+                <input type="text" name="email" class="form-control emailInput" placeholder="someonetoknow@gmail.com">
+              </div>
+              <div class="form-group">
+                <label id="subject" for="subjectInput">Subject</label>
+                <input type="text" name="subject" class="form-control subjectInput" placeholder="e.g I Want to Hire You!">
+              </div>
+              <div class="form-group">
+                <label id="message" for="messageInput">Message or Comment</label>
+                <textarea type="text" name="message" class="form-control messageInput" rows="7" placeholder="I have a message..."></textarea>
+              </div>
+              <br>
+              <button type="submit" class=" btn btn-primary submitBtn animated pulse slow infinite">
+                <h3>Send</h3>
               </button>
-            </div>
-            <div class="modal-body bg-dark text-white">
-              <form method="POST" action="https://afternoon-inlet-46699.herokuapp.com/contact">
-                <p class="d-block">Phone: (901)-326-6124</p>
-                <p class="d-block">Email: rob.j.hardin@gmail.com</p>
-                <h6 class="d-block">Or use the contact form below to stay on the page!</h6>
-                <hr>
-                <div class="form-group">
-                  <label id="email" for="emailInput">Email</label>
-                  <input type="text" name="email" class="form-control emailInput" placeholder="someonetoknow@gmail.com">
-                </div>
-                <div class="form-group">
-                  <label id="subject" for="subjectInput">Subject</label>
-                  <input type="text" name="subject" class="form-control subjectInput" placeholder="e.g I Want to Hire You!">
-                </div>
-                <div class="form-group">
-                  <label id="message" for="messageInput">Message or Comment</label>
-                  <textarea type="text" name="message" class="form-control messageInput" rows="7" placeholder="I have a message..."></textarea>
-                </div>
-                <br>
-                <button type="submit" class=" btn btn-primary submitBtn animated pulse slow infinite">
-                  <h3>Send</h3>
-                </button>
-              </form>
-            </div>
-            <!--Footer-->
-            <div class="modal-footer bg-dark text-white">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
-    <footer class="bg-dark text-white text-center border border-warning p-2 m-2"> Robert Hardin &copy; 2019</footer>
+    </div>
+    <!--Footer-->
+    <footer class="footer text-white text-center border border-warning p-2 mt-2"> Robert Hardin &copy; 2019</footer>
     <!--jQuery, and bootstrap scripts-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

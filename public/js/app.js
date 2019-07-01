@@ -37,62 +37,62 @@ $(document).ready(function () {
       clickEmDead = {
         image: $("<img src='public/assets/images/Home.jpg'>").addClass("border border-warning"),
         name: $("<h2>").text("ClickEmDead"),
-        deployed: $("<a href='https://rhardin94.github.io/ClickEmDead/' target='_blank'>").html("<h3 class='animated pulse slow infinite'> Link to Deployed Site </h3>"),
-        repo: $("<a href='https://github.com/Rhardin94/ClickEmDead' target='_blank'>").html("<h3 class='fab fa-github animated pulse slow infinite'> Repo</h3>")
+        deployed: $("<a href='https://rhardin94.github.io/ClickEmDead/' target='_blank'>").html("<h4 class='animated pulse slow infinite'> Link to Deployed Site </h4>"),
+        repo: $("<a href='https://github.com/Rhardin94/ClickEmDead' target='_blank'>").html("<h4 class='fab fa-github animated pulse slow infinite'> Repo</h4>")
       },
       PipPip_Newsio = {
         image: $("<img src='public/assets/images/homepage.jpg'>").addClass("border border-warning"),
         name: $("<h2>").text("PipPip Newsio"),
-        deployed: $("<a href='https://dry-mesa-18962.herokuapp.com/' target='_blank'>").html("<h3 class='animated pulse slow infinite'> Link to Deployed Site </h3>"),
-        repo: $("<a href='https://github.com/Rhardin94/PipPip_Newsio/tree/master' target='_blank'>").html("<h3 class='fab fa-github animated pulse slow infinite'> Repo</h3>")
+        deployed: $("<a href='https://dry-mesa-18962.herokuapp.com/' target='_blank'>").html("<h4 class='animated pulse slow infinite'> Link to Deployed Site </h4>"),
+        repo: $("<a href='https://github.com/Rhardin94/PipPip_Newsio/tree/master' target='_blank'>").html("<h4 class='fab fa-github animated pulse slow infinite'> Repo</h4>")
       },
       moviews = {
         image: $("<img src='public/assets/images/home_page.png'>").addClass("border border-warning"),
         name: $("<h2>").text("Moviews"),
-        deployed: $("<a href='https://moviews-team5.herokuapp.com/' target='_blank'>").html("<h3 class='animated pulse slow infinite'> Link to Deployed Site </h3>"),
-        repo: $("<a href='https://github.com/Rhardin94/Moviews' target='_blank'>").html("<h3 class='fab fa-github animated pulse slow infinite'> Repo </h3>")
+        deployed: $("<a href='https://moviews-team5.herokuapp.com/' target='_blank'>").html("<h4 class='animated pulse slow infinite'> Link to Deployed Site </h4>"),
+        repo: $("<a href='https://github.com/Rhardin94/Moviews' target='_blank'>").html("<h4 class='fab fa-github animated pulse slow infinite'> Repo </h4>")
       },
       burgerMeister = {
         image: $("<img src='public/assets/images/burger.png'>").addClass("border border-warning"),
         name: $("<h2>").text("Burger Meister"),
-        deployed: $("<a href='https://stark-forest-59222.herokuapp.com/' target='_blank'>").html("<h3 class='animated pulse slow infinite'> Link to Deployed Site </h3>"),
-        repo: $("<a href='https://github.com/Rhardin94/Burger_Meister' target='_blank'>").html("<h3 class='fab fa-github animated pulse slow infinite'> Repo </h3>")
+        deployed: $("<a href='https://stark-forest-59222.herokuapp.com/' target='_blank'>").html("<h4 class='animated pulse slow infinite'> Link to Deployed Site </h4>"),
+        repo: $("<a href='https://github.com/Rhardin94/Burger_Meister' target='_blank'>").html("<h4 class='fab fa-github animated pulse slow infinite'> Repo </h4>")
       },
       bamazonApp = {
         image: $("<img src='public/assets/images/bamazon.jpg'>").addClass("border border-warning"),
         name: $("<h2>").text("Bamazon"),
-        deployed: $("<a href='https://drive.google.com/file/d/1Y4ZtCnFz6rCUDe69aqrM64HyLaljF393/view?usp=sharing' target='_blank'>").html("<h3 class='animated pulse slow infinite'> Link to Demo </h3>"),
-        repo: $("<a href='https://github.com/Rhardin94/Bamazon_NOT_Amazon' target='_blank'>").html("<h3 class='fab fa-github animated pulse slow infinite'> Repo </h3>")
+        deployed: $("<a href='https://drive.google.com/file/d/1Y4ZtCnFz6rCUDe69aqrM64HyLaljF393/view?usp=sharing' target='_blank'>").html("<h4 class='animated pulse slow infinite'> Link to Demo </h4>"),
+        repo: $("<a href='https://github.com/Rhardin94/Bamazon_NOT_Amazon' target='_blank'>").html("<h4 class='fab fa-github animated pulse slow infinite'> Repo </h4>")
       },
       liriApp = {
         image: $("<img src='public/assets/images/liri.jpg'>").addClass("border border-warning"),
         name: $("<h2>").text("L.I.R.I"),
-        deployed: $("<a href='https://drive.google.com/file/d/1TDuus6k-dMUWgKzbpJ6GsKnQ-r6s4B18/view' target='_blank'>").html("<h3 class='animated pulse slow infinite'> Link to Demo </h3>"),
-        repo: $("<a href='https://github.com/Rhardin94/Liri-Node-App' target='_blank'>").html("<h3 class='fab fa-github animated pulse slow infinite'> Repo </h3>")
+        deployed: $("<a href='https://drive.google.com/file/d/1TDuus6k-dMUWgKzbpJ6GsKnQ-r6s4B18/view' target='_blank'>").html("<h4 class='animated pulse slow infinite'> Link to Demo </h4>"),
+        repo: $("<a href='https://github.com/Rhardin94/Liri-Node-App' target='_blank'>").html("<h4 class='fab fa-github animated pulse slow infinite'> Repo </h4>")
       },
       nerdLator = {
         image: $("<img src='public/assets/images/Nerd-lator.png'>").addClass("border border-warning"),
         name: $("<h2>").text("Nerd-Lator"),
-        deployed: $("<a href='https://rhardin94.github.io/Nerd-Lator/' target='_blank'>").html("<h3 class='animated pulse slow infinite'> Link to Deployed Site </h3>"),
-        repo: $("<a href='https://github.com/Rhardin94/Nerd-Lator' target='_blank'>").html("<h3 class='fab fa-github animated pulse slow infinite'> Repo </h3>")
+        deployed: $("<a href='https://rhardin94.github.io/Nerd-Lator/' target='_blank'>").html("<h4 class='animated pulse slow infinite'> Link to Deployed Site </h4>"),
+        repo: $("<a href='https://github.com/Rhardin94/Nerd-Lator' target='_blank'>").html("<h4 class='fab fa-github animated pulse slow infinite'> Repo </h4>")
       },
       gifTastic = {
         image: $("<img src='public/assets/images/gif.png'>").addClass("border border-warning"),
         name: $("<h2>").text("GifTastic"),
-        deployed: $("<a href='https://rhardin94.github.io/GifTastic/' target='_blank'>").html("<h3 class='animated pulse slow infinite'> Link to Deployed Site </h3>"),
-        repo: $("<a href='https://github.com/Rhardin94/GifTastic' target='_blank'>").html("<h3 class='fab fa-github animated pulse slow infinite'> Repo </h3>")
+        deployed: $("<a href='https://rhardin94.github.io/GifTastic/' target='_blank'>").html("<h4 class='animated pulse slow infinite'> Link to Deployed Site </h4>"),
+        repo: $("<a href='https://github.com/Rhardin94/GifTastic' target='_blank'>").html("<h4 class='fab fa-github animated pulse slow infinite'> Repo </h4>")
       },
       officeTrivia = {
         image: $("<img src='public/assets/images/office.png'>").addClass("border border-warning"),
         name: $("<h2>").text("Office Trivia"),
-        deployed: $("<a href='https://rhardin94.github.io/Office-Trivia/' target='_blank'>").html("<h3 class='animated pulse slow infinite'> Link to Deployed Site"),
-        repo: $("<a href='https://github.com/Rhardin94/Office-Trivia' target='_blank'>").html("<h3 class='fab fa-github animated pulse slow infinite'> Repo </h3>")
+        deployed: $("<a href='https://rhardin94.github.io/Office-Trivia/' target='_blank'>").html("<h4 class='animated pulse slow infinite'> Link to Deployed Site"),
+        repo: $("<a href='https://github.com/Rhardin94/Office-Trivia' target='_blank'>").html("<h4 class='fab fa-github animated pulse slow infinite'> Repo </h4>")
       }
     ];
     //Loops through projects array and displays each one inside portfolioDiv
     for (let i = 0; i < pastProjects.length; i++) {
       let displayedProject = pastProjects[i];
-      const currentProject = $("<div>").attr("class", "card bg-secondary text-white border border-warning p-3 m-1 d-inline-block animated fadeIn slow");
+      const currentProject = $("<div>").attr("class", "project text-white p-3 m-1 d-inline-block animated fadeIn slow");
       $(currentProject).append(displayedProject.image);
       $(currentProject).append(displayedProject.name);
       $(currentProject).append(displayedProject.deployed);
