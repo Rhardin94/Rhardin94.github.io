@@ -106,11 +106,26 @@ $(document).ready(function () {
   });
   //On-click that will eventually submit info to me and also navigates back to homepage
   $(".submitBtn").on("click", function(event) {
+    //Prevents submit from refreshing page, submit post request through JS instead of form action.
+    event.preventDefault();
+    const emailData = {
+      Email: $(".emailInput").val().trim(),
+      Subject: $(".subjectInput").val().trim(),
+      Message: $(".messageInput").val().trim()
+    };
+    console.log(emailData);
+    $.post("https://afternoon-inlet-46699.herokuapp.com/contact", emailData).then(res => console.log(res)).catch(err => console.error(err));
     //Form auto sends post request to nodemailer, this checks 
     if ((!$(".subjectInput").val()) || (!$(".emailInput").val()) || (!$(".messageInput").val())) {
       $("label").append(" (You didn't fill in all the required fields!)");
+      setTimeout(() => {
+        $("#email").text("Email");
+        $("#subject").text("Subject");
+        $("#message").text("Message");
+      }, 3000);
       return false;
     };
+    $(".contactModal").modal("toggle");
     //Something magic happens that sends me this info
     //At the moment, it clears the input fields and returns user to about page
     setTimeout(function () {
