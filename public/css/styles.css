@@ -205,49 +205,6 @@ footer {
   flex-shrink: 0;
 }
 .footer {
-  position: relative;
-  top: 300px;
-}
-@media screen and (max-width: 1360px) {
-  .portfolio {
-      width: 50%;
-  }
-}
-@media screen and (max-width: 980px) {
-  .introDiv {
-      width: 80%;
-      margin: auto;
-  }
-  .aboutMe {
-      width: 80%;
-      float: none;
-      margin: 1% auto;
-  }
-  .portfolio {
-      width: 90%;
-      float: none;
-      margin: 1% auto;
-  }
-  .contactForm {
-      width: 80%;
-  }
-}
-@media screen and (max-width: 640px) {
-  .introDiv {
-      width: 90%;
-      margin: auto;
-  }
-  .aboutMe {
-      width: 90%;
-      float: none;
-      margin: 1% auto;
-  }
-  .portfolio {
-      width: 90%;
-      float: none;
-      margin: 1% auto;
-  }
-  .contactForm {
-      width: 90%;
-  }
+  position: sticky;
+  bottom: 20;
 }

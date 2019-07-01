@@ -1,0 +1,22 @@
+body {
+  background-image: url("http://getwallpapers.com/wallpaper/full/7/7/0/74728.jpg");
+}
+/*Fonts*/
+h1, h2, h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0 auto 1%;
+}
+/*Bio*/
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+/*Manageable image sizes*/
+img {
+  height: 200px;
+  width: 250px;
+}
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
