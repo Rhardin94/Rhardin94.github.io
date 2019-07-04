@@ -1,5 +1,8 @@
 //Waits for HTML to load before running anything
 $(document).ready(function () {
+  //Each time the user visits the site, send a get request to wake on heroku's side.
+  // $.get("http://localhost:4500/wake").then(res => console.log(res)).catch(err => console.error(err));
+  $.get("https://afternoon-inlet-46699.herokuapp.com/wake").then(res => console.log(res)).catch(err => console.error(err));
   //Assigning variables to each about div and hiding it for animation later
   const aboutMe = $(".aboutMe");
   aboutMe.hide();
