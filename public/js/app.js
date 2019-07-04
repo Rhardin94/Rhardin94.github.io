@@ -34,6 +34,14 @@ $(document).ready(function () {
   function projectSwap() {
     //const tempArray = [];
     const pastProjects = [
+      fridge2Table = {
+        image: $("<img src='public/assets/images/fridge2table_logo.png'>").addClass("borger border-warning"),
+        name: $("<h2>").text("Fridge2Table"),
+        description: $("<p>").text("A completely mobile app built/published with Expo-CLI that tracks user food expiration. Showcases full-stack, mobile development with react-native"),
+        tech: $("<p>").text("Node.js, React-Native, Expo-CLI, Express, MongoDB"),
+        deployed: $("<a href='https://expo.io/@rhardin/fridgetotable?release-channel=prod' target='_blank'>").html("<h4 class='animated pulse slow infinite'> Link to Deployed App </h4>"),
+        repo: $("<a href='https://github.com/Dreadpipe/fridge2table' target='_blank'>").html("<h4 class='fab fa-github animated pulse slow infinite'> Repo</h4>")
+      },
       clickEmDead = {
         image: $("<img src='public/assets/images/Home.jpg'>").addClass("border border-warning"),
         name: $("<h2>").text("ClickEmDead"),
