@@ -157,8 +157,8 @@ $(document).ready(function () {
       }, 3000);
       return false;
     } else {
-      // $.post("https://afternoon-inlet-46699.herokuapp.com/contact", emailData).then(res => console.log(res)).catch(err => console.error(err));
-      $.post("http://localhost:4500/contact", emailData).then(res => console.log(res)).catch(err => console.error(err));
+      $.post("https://afternoon-inlet-46699.herokuapp.com/contact", emailData).then(res => console.log(res)).catch(err => console.error(err));
+      // $.post("http://localhost:4500/contact", emailData).then(res => console.log(res)).catch(err => console.error(err));
       console.log(emailData);
       //Form auto sends post request to nodemailer, this checks 
       $(".contactModal").modal("toggle");
