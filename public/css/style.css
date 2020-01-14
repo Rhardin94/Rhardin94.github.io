@@ -15,7 +15,11 @@ p {
 /*Manageable image sizes*/
 img {
   height: 200px;
-  width: 250px;
+  width: 200px;
+}
+.profile {
+  height: 250px;
+  width: 200px;
 }
 /*Links*/
 a {
