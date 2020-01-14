@@ -26,13 +26,22 @@ a {
   text-decoration: none;
   color: whitesmoke;
 }
+.projectLink {
+  color: black;
+}
 /*Project Divs*/
 .project {
-  background-color: darkolivegreen;
+  background-color: gainsboro;
 }
 /*All containers on the page*/
 .aboutMe, .skills, .portfolio, .jumbotron, .footer, .modal-header, .modal-body, .modal-footer, .contactBtn {
-  background-color: darkolivegreen;
+  background-color: darkslategrey;
+}
+.onlineInfo {
+  background-color: darkslategray;
+}
+.portfolio {
+  background-color: gainsboro;
 }
 .contactBtn {
   border: none;
